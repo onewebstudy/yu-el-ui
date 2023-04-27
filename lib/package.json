@@ -1,0 +1,12 @@
+{
+  "name": "yu-el-ui",
+  "version": "0.0.2",
+  "description": "一个简单尝试",
+  "main": "yubb-el-ui.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
