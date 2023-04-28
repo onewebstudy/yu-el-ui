@@ -1,0 +1,17 @@
+import{a2 as d,_,c as C,G as F,B as r,z as e,a as o,D,o as h}from"./chunks/framework.e2f2cdb7.js";const{defineComponent:E}=d,A=E({name:"component-doc",components:{"render-demo-0":function(){const{createElementVNode:p,createTextVNode:t,resolveComponent:n,withCtx:s,createVNode:l,openBlock:u,createElementBlock:a}=d,c=p("p",null,"演示一下",-1);function i(N,V){const y=n("el-button"),m=n("Yu-button");return u(),a("div",null,[c,l(y,null,{default:s(()=>[t("组件")]),_:1}),l(m,{type:"primary"},{default:s(()=>[t("点击")]),_:1})])}return{render:i,...{}}}()}}),g=JSON.parse('{"title":"按钮说明","description":"","frontmatter":{},"headers":[],"relativePath":"components/Yubutton/base.md","lastUpdated":1682589421000}'),B=e("h1",{id:"按钮说明",tabindex:"-1"},[o("按钮说明 "),e("a",{class:"header-anchor",href:"#按钮说明","aria-label":'Permalink to "按钮说明"'},"​")],-1),b=e("h2",{id:"基础用法",tabindex:"-1"},[o("基础用法 "),e("a",{class:"header-anchor",href:"#基础用法","aria-label":'Permalink to "基础用法"'},"​")],-1),f=e("div",null,"开始",-1),v=e("div",{class:"language-vue"},[e("pre",{"v-pre":"",class:"shiki material-theme-palenight"},[e("code",null,[e("span",{class:"line"},[e("span",{style:{color:"#89DDFF"}},"<"),e("span",{style:{color:"#F07178"}},"template"),e("span",{style:{color:"#89DDFF"}},">")]),o(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#89DDFF"}},"<"),e("span",{style:{color:"#F07178"}},"div"),e("span",{style:{color:"#89DDFF"}},">")]),o(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#A6ACCD"}},"  "),e("span",{style:{color:"#89DDFF"}},"<"),e("span",{style:{color:"#F07178"}},"p"),e("span",{style:{color:"#89DDFF"}},">"),e("span",{style:{color:"#A6ACCD"}},"演示一下"),e("span",{style:{color:"#89DDFF"}},"</"),e("span",{style:{color:"#F07178"}},"p"),e("span",{style:{color:"#89DDFF"}},">")]),o(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#A6ACCD"}},"  "),e("span",{style:{color:"#89DDFF"}},"<"),e("span",{style:{color:"#F07178"}},"el-button"),e("span",{style:{color:"#89DDFF"}},">"),e("span",{style:{color:"#A6ACCD"}},"组件"),e("span",{style:{color:"#89DDFF"}},"</"),e("span",{style:{color:"#F07178"}},"el-button"),e("span",{style:{color:"#89DDFF"}},">")]),o(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#A6ACCD"}},"  "),e("span",{style:{color:"#89DDFF"}},"<"),e("span",{style:{color:"#F07178"}},"Yu-button"),e("span",{style:{color:"#89DDFF"}}," "),e("span",{style:{color:"#C792EA"}},"type"),e("span",{style:{color:"#89DDFF"}},"="),e("span",{style:{color:"#89DDFF"}},'"'),e("span",{style:{color:"#C3E88D"}},"primary"),e("span",{style:{color:"#89DDFF"}},'"'),e("span",{style:{color:"#89DDFF"}},">"),e("span",{style:{color:"#A6ACCD"}},"点击"),e("span",{style:{color:"#89DDFF"}},"</"),e("span",{style:{color:"#F07178"}},"Yu-button"),e("span",{style:{color:"#89DDFF"}},">")]),o(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#89DDFF"}},"</"),e("span",{style:{color:"#F07178"}},"div"),e("span",{style:{color:"#89DDFF"}},">")]),o(`
+`),e("span",{class:"line"}),o(`
+`),e("span",{class:"line"},[e("span",{style:{color:"#89DDFF"}},"</"),e("span",{style:{color:"#F07178"}},"template"),e("span",{style:{color:"#89DDFF"}},">")])])])],-1);function x(p,t,n,s,l,u){const a=D("render-demo-0"),c=D("demo");return h(),C("div",null,[B,b,F(c,{customClass:"demoblock-custom",sourceCode:`<template>
+<div>
+  <p>演示一下</p>
+  <el-button>组件</el-button>
+  <Yu-button type="primary">点击</Yu-button>
+</div>
+
+</template>
+
+`},{description:r(()=>[f]),highlight:r(()=>[v]),default:r(()=>[F(a)]),_:1})])}const $=_(A,[["render",x]]);export{g as __pageData,$ as default};
