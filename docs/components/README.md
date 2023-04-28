@@ -873,3 +873,32 @@ export default defineConfig({
 
   "register:components": "vitepress-rc"
 ```
+
+## 通过github预览页面
+> 修改config.ts里面的base
+```
+ base: '/yu-el-ui/',
+```
+> 添加命令,deploy.sh
+```
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+pnpm run docs:build
+
+# 进入生成的文件夹
+cd ./docs/.vitepress/dist
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f https://github.com/onewebstudy/yu-el-ui.git master:gh-pages
+
+cd -
+```
+```
+"deploy": "deploy.sh"
+```
