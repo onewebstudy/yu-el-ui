@@ -585,4 +585,20 @@ import{_ as s,c as n,o as a,O as l}from"./chunks/framework.e2f2cdb7.js";const D=
 <span class="line"><span style="color:#A6ACCD;"></span></span>
 <span class="line"><span style="color:#A6ACCD;">  &quot;docs:build&quot;: &quot;pnpm run register:components &amp;&amp; vitepress build docs&quot;,</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>
-<span class="line"><span style="color:#A6ACCD;">  &quot;register:components&quot;: &quot;vitepress-rc&quot;</span></span></code></pre></div>`,127),o=[e];function t(c,i,r,C,A,u){return a(),n("div",null,o)}const d=s(p,[["render",t]]);export{D as __pageData,d as default};
+<span class="line"><span style="color:#A6ACCD;">  &quot;register:components&quot;: &quot;vitepress-rc&quot;</span></span></code></pre></div><h2 id="通过github预览页面" tabindex="-1">通过github预览页面 <a class="header-anchor" href="#通过github预览页面" aria-label="Permalink to &quot;通过github预览页面&quot;">​</a></h2><blockquote><p>修改config.ts里面的base</p></blockquote><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">base: &#39;/yu-el-ui/&#39;,</span></span></code></pre></div><blockquote><p>添加命令,deploy.sh</p></blockquote><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;"># 确保脚本抛出遇到的错误</span></span>
+<span class="line"><span style="color:#A6ACCD;">set -e</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"># 生成静态文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">pnpm run docs:build</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"># 进入生成的文件夹</span></span>
+<span class="line"><span style="color:#A6ACCD;">cd ./docs/.vitepress/dist</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">git init</span></span>
+<span class="line"><span style="color:#A6ACCD;">git add -A</span></span>
+<span class="line"><span style="color:#A6ACCD;">git commit -m &#39;deploy&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">git push -f https://github.com/onewebstudy/yu-el-ui.git master:gh-pages</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">cd -</span></span></code></pre></div><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">&quot;deploy&quot;: &quot;deploy.sh&quot;</span></span></code></pre></div>`,133),o=[e];function t(c,i,r,C,A,u){return a(),n("div",null,o)}const d=s(p,[["render",t]]);export{D as __pageData,d as default};

@@ -10,7 +10,7 @@
     <link rel="preload" href="/yu-el-ui/assets/inter-roman-latin.2ed14f66.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="modulepreload" href="/yu-el-ui/assets/chunks/framework.e2f2cdb7.js">
   <link rel="modulepreload" href="/yu-el-ui/assets/chunks/theme.c7da0d4c.js">
-  <link rel="modulepreload" href="/yu-el-ui/assets/components_README.md.23782baa.lean.js">
+  <link rel="modulepreload" href="/yu-el-ui/assets/components_README.md.016f31e0.lean.js">
   <script id="check-dark-light">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
   </head>
   <body>
@@ -601,8 +601,24 @@
 <span class="line"><span style="color:#A6ACCD;"></span></span>
 <span class="line"><span style="color:#A6ACCD;">  &quot;docs:build&quot;: &quot;pnpm run register:components &amp;&amp; vitepress build docs&quot;,</span></span>
 <span class="line"><span style="color:#A6ACCD;"></span></span>
-<span class="line"><span style="color:#A6ACCD;">  &quot;register:components&quot;: &quot;vitepress-rc&quot;</span></span></code></pre></div></div></div></main><footer class="VPDocFooter" data-v-b0ce5ddd data-v-cad07a70><!--[--><!--]--><div class="edit-info" data-v-cad07a70><!----><div class="last-updated" data-v-cad07a70><p class="VPLastUpdated" data-v-cad07a70 data-v-745f5d8a>Last updated: <time datetime="2023-04-27T09:57:01.000Z" data-v-745f5d8a></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"e291abe4\",\"components_yubutton_base.md\":\"298b6679\",\"components_readme.md\":\"23782baa\"}")
+<span class="line"><span style="color:#A6ACCD;">  &quot;register:components&quot;: &quot;vitepress-rc&quot;</span></span></code></pre></div><h2 id="通过github预览页面" tabindex="-1">通过github预览页面 <a class="header-anchor" href="#通过github预览页面" aria-label="Permalink to &quot;通过github预览页面&quot;">​</a></h2><blockquote><p>修改config.ts里面的base</p></blockquote><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">base: &#39;/yu-el-ui/&#39;,</span></span></code></pre></div><blockquote><p>添加命令,deploy.sh</p></blockquote><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;"># 确保脚本抛出遇到的错误</span></span>
+<span class="line"><span style="color:#A6ACCD;">set -e</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"># 生成静态文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">pnpm run docs:build</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"># 进入生成的文件夹</span></span>
+<span class="line"><span style="color:#A6ACCD;">cd ./docs/.vitepress/dist</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">git init</span></span>
+<span class="line"><span style="color:#A6ACCD;">git add -A</span></span>
+<span class="line"><span style="color:#A6ACCD;">git commit -m &#39;deploy&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">git push -f https://github.com/onewebstudy/yu-el-ui.git master:gh-pages</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">cd -</span></span></code></pre></div><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">&quot;deploy&quot;: &quot;deploy.sh&quot;</span></span></code></pre></div></div></div></main><footer class="VPDocFooter" data-v-b0ce5ddd data-v-cad07a70><!--[--><!--]--><div class="edit-info" data-v-cad07a70><!----><div class="last-updated" data-v-cad07a70><p class="VPLastUpdated" data-v-cad07a70 data-v-745f5d8a>Last updated: <time datetime="2023-04-27T09:57:01.000Z" data-v-745f5d8a></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"e291abe4\",\"components_yubutton_base.md\":\"298b6679\",\"components_readme.md\":\"016f31e0\"}")
 __VP_SITE_DATA__ = JSON.parse("{\"lang\":\"cn-ZH\",\"dir\":\"ltr\",\"title\":\"yuui基础组件文档\",\"description\":\"基于Element-plus基础组件封装使用\",\"base\":\"/yu-el-ui/\",\"head\":[],\"appearance\":true,\"themeConfig\":{\"logo\":\"/favicon.ico\",\"siteTitle\":\"yuui基础组件文档\",\"outline\":3,\"nav\":[{\"text\":\"基础组件\",\"link\":\"/components/Yubutton/base.md\"},{\"text\":\"项目说明\",\"link\":\"/components/README.md\"}],\"sidebar\":{\"/components\":[]}},\"locales\":{},\"scrollOffset\":90,\"cleanUrls\":false}")</script>
     
   </body>
