@@ -14,6 +14,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import viteCompression from 'vite-plugin-compression'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { resolve } from 'path'
+import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -43,6 +44,7 @@ export default defineConfig({
       gzipSize: true,
       brotliSize: true,
     }),
+    dts({ insertTypesEntry: true, copyDtsFiles: false }),
   ],
   resolve: {
     alias: {

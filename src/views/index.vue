@@ -1,6 +1,7 @@
 <template>
   <div class="home">hahhah</div>
   <Yu-button>哈哈是</Yu-button>
+  <Yu-input ysize="0"></Yu-input>
 </template>
 
 <script setup lang="ts" name="home">

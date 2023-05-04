@@ -16,13 +16,13 @@ export default defineConfig({
     ],
     sidebar:{
       '/components': [
-        // {
-        //   text: '常用组件',
-        //   items: [
-        //     { text: '下拉选择组件', link: '/components/TSelect/base.md' },
-        //     { text: '下拉选择表格组件', link: '/components/TSelectTable/base.md' },
-        //   ]
-        // },
+        {
+          text: '常用组件',
+          items: [
+            { text: '按钮', link: '/components/Yubutton/base.md' },
+            { text: '输入框', link: '/components/YuInput/base.md' },
+          ]
+        },
       ]
     }
   },
